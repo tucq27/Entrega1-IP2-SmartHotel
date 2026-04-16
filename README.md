@@ -6,7 +6,7 @@ Trabalho para a disciplina de Introdução à Programação 2 focado na automati
 - Diagrama UML
 
 ## Grupo:
-* Bernardo Otutam Pereira Lima - bernardopereiralima@hotmail.com
+* Bernardo Otutam Pereiralima - bernardopereiralima@hotmail.com
 * Gabriela Couceiro de Albuquerque Macedo - couceirog2.0@gmail.com
 * Gustavo Gomes da Silva - gustavogomesarroz@gmail.com
 * Yuri Marinho Martins Lima - marinhoy870@gmail.com
