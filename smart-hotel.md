@@ -9,16 +9,18 @@ O sistema deve organizar os quartos por categorias, validar a disponibilidade pa
 ## Requisitos Funcionais
 
 ### 1. Gestão de Hóspedes e Acomodações
-- **REQ01**: Permitir cadastro de hóspedes com dados pessoais, contato, documento e preferências.
-- **REQ02**: Cadastrar quartos com identificação única, andar e status (disponível, sujo, manutenção).
-- **REQ03**: Implementar herança para tipos de quarto: Standard, Suíte e Presidencial.
-- **REQ04**: Definir tarifas baseadas no tipo de quarto e aplicar multiplicadores para alta temporada.
+- **REQ01**: Permitir cadastro de hóspedes com dados pessoais, contato, documento e preferências. _OK_
+- **REQ02**: Cadastrar quartos com identificação única, andar e status (disponível, sujo, manutenção). _OK_
+- **REQ03**: Implementar herança para tipos de quarto: Standard, Suíte e Presidencial. _OK_
+- **REQ04**: Definir tarifas baseadas no tipo de quarto e aplicar multiplicadores para alta temporada. _FAZENDO_
 
 ### 2. Reservas e Hospedagem
-- **REQ05**: Permitir a criação de reservas vinculando hóspede, quarto e período de estadia.
-- **REQ06**: Realizar o Check-in validando a reserva prévia e o horário de entrada.
-- **REQ07**: Registrar o Check-out com encerramento da conta e alteração de status para "limpeza".
-- **REQ08**: Permitir a reserva de múltiplos quartos vinculados a um único "responsável de grupo".
+- **REQ05**: Permitir a criação de reservas vinculando hóspede, quarto e período de estadia. _OK_
+- **REQ06**: Realizar o Check-in validando a reserva prévia e o horário de entrada. _OK ?_
+- **REQ07**: Registrar o Check-out com encerramento da conta e alteração de status para "limpeza". _OK ?_
+- **REQ08**: Permitir a reserva de múltiplos quartos vinculados a um único "responsável de grupo". _OK ?_
+
+## OBS: Criar um repositorio de custos
 
 ### 3. Consumo e Serviços
 - **REQ09**: Gerenciar o inventário do frigobar (composição) para cada quarto específico.
