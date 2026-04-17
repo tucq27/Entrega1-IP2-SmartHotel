@@ -22,6 +22,18 @@ O sistema deve organizar os quartos por categorias, validar a disponibilidade pa
 
 ## OBS: Criar um repositorio de custos (_repositórios não serão necessários para a entrega 1_)
 
+## OBS: Alterações futuras no diagrama/ código
+- Além da classe reserva, adicionar a classe hospedagem (considerando que hóspedes podem fazer uma reserva prévia e se hospedarem ou simplesmente chegar no hotel e se hospedar, caso haja quartos disponíveis)
+- Criar uma classe Funcionario, que tem as subclasses (herdando de Funcionario): Recepcionista, Lavanderia, Limpeza
+- Adicionar como atributos na Reserva: *Recepcionista* (que fez a reserva da pessoa), *Horário de reserva* (hora em que a reserva foi realizada)
+- Adicionar um método na classe Reserva que sirva para verificar se a pessoa que fez a reserva é a pessoa de verdade (_ex: alguém pode tentar entrar usando o nome da pessoa, então o sistema também pode pedir nome, cpf e id da reserva para impedir isso_)
+- Também dá pra adicionar o método verificarQuartos, pra saber se existe algum quarto disponível no hotel antes de fazer a reserva (_varre todo o arrayList de quartos no hotel e verifica se eles estão disponíveis_)
+- Sobre a classe Hospedagem, a gente pode transferir os atributos e métodos de chekIn e chekOut pra ela
+- Os atributos da classe Hospedagem vão ser parecidos com a classe Reserva, porque também tem responsável, quarto e id
+- Podem existir dois métodos construtores pra Hospedagem:
+1. Considera que uma reserva já foi feita antes, então os atributos da Reserva também são herdados (id, responsável, pessoas, quarto) 
+2. Considera que nenhuma reserva foi feita então precisa usar o método de verificarQuartos para saber se há algum quarto disponível (_esse método herda da classe reserva_)
+
 ### 3. Consumo e Serviços
 - **REQ09**: Gerenciar o inventário do frigobar (composição) para cada quarto específico.
 - **REQ10**: Registrar consumo de itens do frigobar durante a estadia do hóspede.
