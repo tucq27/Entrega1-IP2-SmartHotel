@@ -20,7 +20,7 @@ O sistema deve organizar os quartos por categorias, validar a disponibilidade pa
 - **REQ07**: Registrar o Check-out com encerramento da conta e alteração de status para "limpeza". _OK ?_
 - **REQ08**: Permitir a reserva de múltiplos quartos vinculados a um único "responsável de grupo". _OK ?_
 
-## OBS: Criar um repositorio de custos
+## OBS: Criar um repositorio de custos (_repositórios não serão necessários para a entrega 1_)
 
 ### 3. Consumo e Serviços
 - **REQ09**: Gerenciar o inventário do frigobar (composição) para cada quarto específico.
