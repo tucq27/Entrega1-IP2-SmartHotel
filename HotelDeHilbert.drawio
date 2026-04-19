@@ -1,22 +1,22 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Pahina-1" id="1s45UnF7OpiDzQUf6mOz">
-    <mxGraphModel dx="2079" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2265" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;i&gt;Quarto&lt;/i&gt;" vertex="1">
-          <mxGeometry height="238" width="200" x="-220" y="1188" as="geometry">
+          <mxGeometry height="248" width="200" x="-220" y="1188" as="geometry">
             <mxRectangle height="30" width="80" x="320" y="210" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="F0CJibQ6eAuSd2ZoMPEE-2" parent="F0CJibQ6eAuSd2ZoMPEE-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- id: String&lt;/div&gt;- andar: int&lt;div&gt;- status: String&lt;/div&gt;&lt;div&gt;- capacidade: int&lt;/div&gt;&lt;div&gt;- multiplicadorTaxa: double&lt;/div&gt;&lt;div&gt;- multiplicadorTemporada: double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- quartoLivre: boolean&lt;/div&gt;&lt;div&gt;- quartoLimpo: boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="134" width="200" y="26" as="geometry" />
+        <mxCell id="F0CJibQ6eAuSd2ZoMPEE-2" parent="F0CJibQ6eAuSd2ZoMPEE-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- id: String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- andar: int&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- status: String&lt;/div&gt;&lt;div&gt;- capacidade: int&lt;/div&gt;&lt;div&gt;- multiplicadorTaxa: double&lt;/div&gt;&lt;div&gt;- multiplicadorTemporada: double&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- quartoLivre: boolean&lt;/div&gt;&lt;div&gt;- quartoLimpo: boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="200" y="26" as="geometry" />
         </mxCell>
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-3" parent="F0CJibQ6eAuSd2ZoMPEE-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="24" width="200" y="160" as="geometry" />
+          <mxGeometry height="24" width="200" y="170" as="geometry" />
         </mxCell>
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-4" parent="F0CJibQ6eAuSd2ZoMPEE-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# calcularTarifa(): double&lt;div&gt;+ verificarStatus():&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="54" width="200" y="184" as="geometry" />
+          <mxGeometry height="54" width="200" y="194" as="geometry" />
         </mxCell>
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="QuartoPadrao" vertex="1">
           <mxGeometry height="72" width="190" x="-420" y="1528" as="geometry">
@@ -146,7 +146,7 @@
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-49" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Hospedagem" vertex="1">
           <mxGeometry height="230" width="220" x="-225" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="F0CJibQ6eAuSd2ZoMPEE-50" parent="F0CJibQ6eAuSd2ZoMPEE-49" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;- id: String&lt;/div&gt;&lt;div&gt;- horarioChegada: LocalDateTime&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;horarioSaida: LocalDateTime&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- periodoEstadia: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="F0CJibQ6eAuSd2ZoMPEE-50" parent="F0CJibQ6eAuSd2ZoMPEE-49" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;div&gt;- id: String&lt;/div&gt;&lt;div&gt;&lt;div&gt;- definirId: int= 0&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- horarioChegada: LocalDateTime&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;horarioSaida: LocalDateTime&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- periodoEstadia: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="84" width="220" y="26" as="geometry" />
         </mxCell>
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-51" parent="F0CJibQ6eAuSd2ZoMPEE-49" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
@@ -296,6 +296,12 @@
         </mxCell>
         <mxCell id="iymiKeCUbA7mDdHlDE0R-36" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="Para que um serviço de limpeza de quarto possa acontecer, o quarto precisa estar sujo e precisa estar livre" vertex="1">
           <mxGeometry height="110" width="140" x="-770" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="YYpm7XFeKm-lXoA_mIPa-1" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=10;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="definirId será um atributo static, que é incrementado toda vez que uma nova hospedagem é feita, exceto se a hospedagem já tiver sido reservada" vertex="1">
+          <mxGeometry height="100" width="150" x="-380" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="YYpm7XFeKm-lXoA_mIPa-3" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=22;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="definirId é incrementado quando uma hospedagem sem reserva é feita ou quando uma reserva é feita" vertex="1">
+          <mxGeometry height="110" width="120" x="-350" y="930" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
