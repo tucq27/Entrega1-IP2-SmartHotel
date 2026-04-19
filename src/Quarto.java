@@ -4,7 +4,7 @@ abstract class Quarto {
     protected int andar;
     protected boolean limpo = true;
     protected boolean livre = true;
-    protected double multTaxa; //Multiplicador
+    protected double multTaxa; //Multiplicador de taxa de acordo com o tipo de quarto
     protected static double multTemporada;
     protected int capacidade;
 
@@ -14,10 +14,7 @@ abstract class Quarto {
         this.id = id;
         this.andar = andar;
         this.capacidade = capacidade;
+        // por padrao, o quarto é limpo e livre, entao não precisa passar isso no construtor
     }
 
-    public double calcularTarifa() { // É bom fazer isso com todos os custos do frigobar e serviços também
-    //A gente pode talvez fazer um "calcularRecibo()" sei lá
-        return 100*multTaxa*multTemporada;
-    }
 }
