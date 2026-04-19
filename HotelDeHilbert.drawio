@@ -152,7 +152,7 @@
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-51" parent="F0CJibQ6eAuSd2ZoMPEE-49" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="28" width="220" y="110" as="geometry" />
         </mxCell>
-        <mxCell id="F0CJibQ6eAuSd2ZoMPEE-52" parent="F0CJibQ6eAuSd2ZoMPEE-49" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ checkIn(): void&lt;div&gt;+ checkOut(): void&lt;div&gt;+ verCheckIn(): boolean&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ verCheckOut(): boolean&lt;/div&gt;&lt;div&gt;+ verificarQuartos(): ArrayList&amp;lt;Quarto&amp;gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="F0CJibQ6eAuSd2ZoMPEE-52" parent="F0CJibQ6eAuSd2ZoMPEE-49" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ checkIn(): void&lt;div&gt;+ checkOut(): void&lt;div&gt;+ verCheckIn(): boolean&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ verCheckOut(): boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="92" width="220" y="138" as="geometry" />
         </mxCell>
         <mxCell id="F0CJibQ6eAuSd2ZoMPEE-53" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Frigobar" vertex="1">
@@ -302,6 +302,9 @@
         </mxCell>
         <mxCell id="YYpm7XFeKm-lXoA_mIPa-3" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=22;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="definirId é incrementado quando uma hospedagem sem reserva é feita ou quando uma reserva é feita" vertex="1">
           <mxGeometry height="110" width="120" x="-350" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="YYpm7XFeKm-lXoA_mIPa-4" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="no construtor de Hospedagem, haverá o método&lt;span style=&quot;text-align: left;&quot;&gt;&amp;nbsp;verificarQuartos, declarado no repositório de quartos, que verifica se o quarto esta disponível&lt;/span&gt;" vertex="1">
+          <mxGeometry height="115" width="180" x="150" y="825" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
