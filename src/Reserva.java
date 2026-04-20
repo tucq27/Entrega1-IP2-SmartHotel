@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Reserva extends Hospedagem {
@@ -13,7 +14,7 @@ public class Reserva extends Hospedagem {
         super(); 
         this.horarioDaReserva = horarioDaReserva;
 
-        if (quarto == null || !quarto.isQuartoLivre()) {
+        if (quarto == null || !quarto.isLivre()) {
             throw new IllegalStateException("Quarto não disponível para reserva!");
         }
 
@@ -22,13 +23,13 @@ public class Reserva extends Hospedagem {
         this.setQuarto(quarto);
     }
 
-    public boolean verificarHospede(String nome, String cpf, int dataNascimento) {
+    public boolean verificarHospede(String nome, String cpf, LocalDate dataNascimento) {
         if (getHospedes() == null) return false;
 
         for (Hospede h : getHospedes()) {
             if (h.getNome().equals(nome) &&
                 h.getCpf().equals(cpf) &&
-                h.getDataNascimento() == dataNascimento) {
+                h.getDataNascimento().equals(dataNascimento)) {
                 return true;
             }
         }
@@ -40,13 +41,13 @@ public class Reserva extends Hospedagem {
             throw new IllegalStateException("Reserva sem quarto!");
         }
 
-        if (!getQuarto().isQuartoLivre()) {
+        if (!getQuarto().isLivre()) {
             throw new IllegalStateException("Quarto ocupado!");
         }
 
         setHorarioChegada(LocalDateTime.now());
 
-        getQuarto().setQuartoLivre(false);
+        getQuarto().setLivre(false);
 
         System.out.println("Reserva confirmada e check-in realizado!");
     }

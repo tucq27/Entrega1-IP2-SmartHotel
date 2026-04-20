@@ -37,7 +37,7 @@ public class Hospedagem {
 
         // ocupa o quarto ao iniciar hospedagem
         if (quarto != null) {
-            quarto.setQuartoLivre(false);
+            quarto.setLivre(false);
         }
     }
 
@@ -50,7 +50,7 @@ public class Hospedagem {
         horarioChegada = LocalDateTime.now();
 
         if (quarto != null) {
-            quarto.setQuartoLivre(false);
+            quarto.setLivre(false);
         }
 
         System.out.println("Check-in realizado!");
@@ -72,7 +72,7 @@ public class Hospedagem {
         periodoDeEstadia = Duration.between(horarioChegada, horarioSaida);
 
         if (quarto != null) {
-            quarto.setQuartoLivre(true);
+            quarto.setLivre(true);
         }
 
         System.out.println("Check-out realizado!");
