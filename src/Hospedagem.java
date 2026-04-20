@@ -1,4 +1,6 @@
 import java.time.LocalDateTime;
+import java.time.Duration;
+import java.util.ArrayList;
 
 public class Hospedagem {
 
@@ -6,7 +8,7 @@ public class Hospedagem {
     private static int definirId = 0; 
     private LocalDateTime horarioChegada; //horario do CheckIn
     private LocalDateTime horarioSaida; //horario do CheckOut
-    private int periodoDeEstadia; // calcula em horas a diferença entre os horários do CheckIn e CheckOut, para calcular o periodo total da hospedagem
+    private Duration periodoDeEstadia; // define, em horas, quanto tempo deve durar a estadia
     //private Responsavel responsavel;
     //private ArrayList<Hospede> hospedes;
     //private Quarto quarto;
@@ -27,6 +29,9 @@ public class Hospedagem {
         this.horarioChegada = horarioChegada;
     }
 
+    // deverá haver um metodo que aumenta e um que diminui o periodo de estadia
+
+
     // Getters
     public String getId() {
         return id;
@@ -40,7 +45,8 @@ public class Hospedagem {
         return horarioSaida;
     }
 
-    public int getPeriodoDeEstadia() {
+    public Duration getPeriodoDeEstadia() {
         return periodoDeEstadia;
     }
+
 }
