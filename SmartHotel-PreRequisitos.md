@@ -12,27 +12,21 @@ O sistema deve organizar os quartos por categorias, validar a disponibilidade pa
 - **REQ01**: Permitir cadastro de hóspedes com dados pessoais, contato, documento e preferências. _OK_
 - **REQ02**: Cadastrar quartos com identificação única, andar e status (disponível, sujo, manutenção). _OK_
 - **REQ03**: Implementar herança para tipos de quarto: Standard, Suíte e Presidencial. _OK_
-- **REQ04**: Definir tarifas baseadas no tipo de quarto e aplicar multiplicadores para alta temporada. _FAZENDO_
+- **REQ04**: Definir tarifas baseadas no tipo de quarto e aplicar multiplicadores para alta temporada. _OK_
 
 ### 2. Reservas e Hospedagem
 - **REQ05**: Permitir a criação de reservas vinculando hóspede, quarto e período de estadia. _OK_
-- **REQ06**: Realizar o Check-in validando a reserva prévia e o horário de entrada. _OK ?_
-- **REQ07**: Registrar o Check-out com encerramento da conta e alteração de status para "limpeza". _OK ?_
-- **REQ08**: Permitir a reserva de múltiplos quartos vinculados a um único "responsável de grupo". _OK ?_
-
-## OBS: Criar um repositorio de custos (_repositórios não serão necessários para a entrega 1_)
+- **REQ06**: Realizar o Check-in validando a reserva prévia e o horário de entrada. _(Implementando)_
+- **REQ07**: Registrar o Check-out com encerramento da conta e alteração de status para "limpeza". _(Implementando)_
+- **REQ08**: Permitir a reserva de múltiplos quartos vinculados a um único "responsável de grupo" (_todos as hospedagens dependem de um responsável, este que pode ter mais de uma reserva_). _OK_
 
 ## OBS: Alterações futuras no diagrama/ código
-- Além da classe reserva, adicionar a classe hospedagem (considerando que hóspedes podem fazer uma reserva prévia e se hospedarem ou simplesmente chegar no hotel e se hospedar, caso haja quartos disponíveis)
-- Criar uma classe Funcionario, que tem as subclasses (herdando de Funcionario): Recepcionista, Lavanderia, Limpeza
-- Adicionar como atributos na Reserva: *Recepcionista* (que fez a reserva da pessoa), *Horário de reserva* (hora em que a reserva foi realizada)
-- Adicionar um método na classe Reserva que sirva para verificar se a pessoa que fez a reserva é a pessoa de verdade (_ex: alguém pode tentar entrar usando o nome da pessoa, então o sistema também pode pedir nome, cpf e id da reserva para impedir isso_)
-- Também dá pra adicionar o método verificarQuartos, pra saber se existe algum quarto disponível no hotel antes de fazer a reserva (_varre todo o arrayList de quartos no hotel e verifica se eles estão disponíveis_)
-- Sobre a classe Hospedagem, a gente pode transferir os atributos e métodos de chekIn e chekOut pra ela
-- Os atributos da classe Hospedagem vão ser parecidos com a classe Reserva, porque também tem responsável, quarto e id
-- Podem existir dois métodos construtores pra Hospedagem:
-1. Considera que uma reserva já foi feita antes, então os atributos da Reserva também são herdados (id, responsável, pessoas, quarto) 
-2. Considera que nenhuma reserva foi feita então precisa usar o método de verificarQuartos para saber se há algum quarto disponível (_esse método herda da classe reserva_)
+- **1:** Além da classe reserva, adicionar a classe hospedagem (considerando que hóspedes podem fazer uma reserva prévia e se hospedarem ou simplesmente chegar no hotel e se hospedar, caso haja quartos disponíveis)
+- **2:** Criar classe Hospedagem, com a subclasse Reserva (hospedagem com agendamento prévio)
+- **3:** Adicionar como atributo na Reserva o *Horário de reserva* (hora em que a reserva foi realizada)
+- **4:** Adicionar um método na classe Reserva que sirva para verificar se a pessoa que fez a reserva é a pessoa de verdade (_ex: alguém pode tentar entrar usando o nome da pessoa, então o sistema também pode pedir nome, cpf e id da reserva para impedir isso_)
+- **5:** Adicionar futurante o método verificarQuartos, pra saber se existe algum quarto disponível no hotel antes de fazer a reserva/ hospedagem (_varre todo o arrayList de quartos no hotel e verifica se eles estão disponíveis_)
+- **6:** Criar um Repositório de Custos que registra todos os custos relacionados a um responsável
 
 ### 3. Consumo e Serviços
 - **REQ09**: Gerenciar o inventário do frigobar (composição) para cada quarto específico.
