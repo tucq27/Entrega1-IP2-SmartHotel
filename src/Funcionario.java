@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 public class Funcionario extends Pessoa {
     private String cargo;
-    private boolean ocupado = false; // por padraão, funcionario está disponivel
+    private boolean ocupado = false; // por padrão, funcionario está disponivel
 
     // Construtor
     public Funcionario(String nome, String cpf, LocalDate dataNascimento,

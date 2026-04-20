@@ -15,7 +15,7 @@ public class Reserva extends Hospedagem {
         this.horarioDaReserva = horarioDaReserva;
 
         if (quarto == null || !quarto.isLivre()) {
-            throw new IllegalStateException("Quarto não disponível para reserva!");
+            throw new IllegalStateException("Quarto indisponível para reserva!");
         }
 
         this.setResponsavel(responsavel);

@@ -79,6 +79,7 @@ public class Hospedagem {
         System.out.println("Duração da estadia: " + periodoDeEstadia.toHours() + " horas");
     }
 
+    // Getters e Setters
     public boolean verCheckIn() {
         return horarioChegada != null;
     }

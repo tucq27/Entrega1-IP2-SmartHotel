@@ -9,11 +9,14 @@ abstract class Quarto {
     protected int capacidade;
 
     protected Hospedagem hospedagem;
+    protected Frigobar frigobar;
+    // Talvez devêssemos inicializar o frigobar por aqui
 
-    public Quarto(String id, int andar, int capacidade) {
+    public Quarto(String id, int andar, int capacidade, Frigobar frigobar) {
         this.id = id;
         this.andar = andar;
         this.capacidade = capacidade;
+        this.frigobar = frigobar;
         // por padrao, o quarto é limpo e livre, entao não precisa passar isso no construtor
     }
 

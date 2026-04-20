@@ -4,8 +4,20 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
+        // inicializando frigobar do quarto
+        Item agua = new Item("Água mineral", LocalDate.of(2030, 01, 01), 8.99); //9 real numa água é osso // preço de hotel
+
+        Item chocolate = new Item("Barra de chocolate com super amêndoas", LocalDate.of(2028, 04, 12), 23.99); //Das pequenas tá
+
+        Frigobar frigobar01 = new Frigobar();
+        frigobar01.adicionarItem(agua);
+        frigobar01.adicionarItem(chocolate);
+        frigobar01.removerItem(agua);
+
         // criando um quarto
-        Quarto quarto01= new QuartoPadrao("01", 2, 5);
+        Quarto quarto01= new QuartoPadrao("01", 2, 5, frigobar01);
+
 
         // criando um responsável
         Responsavel joel = new Responsavel("Joel", "123.456.789-00", LocalDate.of(1990, 5, 20), "0800-5000",
@@ -19,8 +31,15 @@ public class Main {
         hospedes1.add((Hospede) taylor);
         hospedes1.add((Hospede) sergio); 
 
-        Hospedagem h1= new Hospedagem(LocalDate.now(), joel, hospedes1, quarto01);
+        Hospedagem h1= new Hospedagem(LocalDateTime.now(), joel, hospedes1, quarto01);
+;
+        System.out.println("Informações da hospedagem:\n");
+        System.out.println("Quarto: " + h1.getQuarto().getId());
+        System.out.println("Hóspede 1: " + h1.getHospedes().get(0).getNome());
+        System.out.println("Hóspede 2: " + h1.getHospedes().get(1).getNome());
+        System.out.println("Item 1 do frigobar: " + frigobar01.getItens().get(0).getNome());
 
-        System.out.println(h1.getHospedes().get(0).getNome() + "\n" + h1.getHospedes().get(1).getNome());
+        h1.checkIn();
+        h1.checkOut();
     }
 }

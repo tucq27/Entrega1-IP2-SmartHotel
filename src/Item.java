@@ -1,12 +1,12 @@
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Item {
 
     private String nome;
-    private LocalDateTime validade;
+    private LocalDate validade;
     private double valor;
 
-    public Item(String nome, LocalDateTime validade, double valor) {
+    public Item(String nome, LocalDate validade, double valor) {
         this.nome = nome;
         this.validade = validade;
         this.valor = valor;
@@ -16,7 +16,7 @@ public class Item {
         return this.valor;
     }
 
-    public LocalDateTime getValidade() {
+    public LocalDate getValidade() {
         return this.validade;
     }
 
