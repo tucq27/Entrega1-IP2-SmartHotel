@@ -17,4 +17,52 @@ abstract class Quarto {
         // por padrao, o quarto é limpo e livre, entao não precisa passar isso no construtor
     }
 
-}
+    // Getters
+    public String getId() {
+        return id;
+    }
+    public int getAndar() {
+        return andar;
+    }
+    public boolean isLimpo() {
+        return limpo;
+    }
+    public boolean isLivre() {
+        return livre;
+    }
+    public double getMultTaxa() {
+        return multTaxa;
+    }
+    public static double getMultTemporada() {
+        return multTemporada;
+    }
+    public int getCapacidade() {
+        return capacidade;
+    }
+
+    public Hospedagem getHospedagem() {
+        return hospedagem;
+    }
+
+    // Setters
+    public void setLimpo(boolean limpo) {
+        this.limpo = limpo;
+    }
+    public void setLivre(boolean livre) {
+        this.livre = livre;
+    }
+    public void setMultTaxa(double multTaxa) {
+        this.multTaxa = multTaxa;
+    }
+    public static void setMultTemporada(double multTemporada) {
+        Quarto.multTemporada = multTemporada;
+    }
+    public void setCapacidade(int capacidade) {
+        this.capacidade = capacidade;
+    }
+
+    public void setHospedagem(Hospedagem hospedagem) {
+        this.hospedagem = hospedagem;
+    }
+
+}   
