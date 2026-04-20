@@ -1,28 +1,60 @@
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Reserva extends Hospedagem {
 
     private LocalDateTime horarioDaReserva;
 
-    // Construtor: horarioDaReserva, responsavel, hospedes, quarto
-    public Reserva(LocalDateTime horarioDaReserva) {
-        super();
+    public Reserva(LocalDateTime horarioDaReserva,
+                   Responsavel responsavel,
+                   ArrayList<Hospede> hospedes,
+                   Quarto quarto) {
+
+        super(); 
         this.horarioDaReserva = horarioDaReserva;
+
+        if (quarto == null || !quarto.isQuartoLivre()) {
+            throw new IllegalStateException("Quarto não disponível para reserva!");
+        }
+
+        this.setResponsavel(responsavel);
+        this.setHospedes(hospedes);
+        this.setQuarto(quarto);
     }
 
-    // metodo para verificar se o hospede realmente é quem diz ser, para evitar fraudes
-    public boolean verificarHospede() {
-        // precisa da Classe Hospede 
-        return false; // por enquanto só retorna false, porque o metodo não possui corpo
+    public boolean verificarHospede(String nome, String cpf, int dataNascimento) {
+        if (getHospedes() == null) return false;
+
+        for (Hospede h : getHospedes()) {
+            if (h.getNome().equals(nome) &&
+                h.getCpf().equals(cpf) &&
+                h.getDataNascimento() == dataNascimento) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    // Getters
+    public void confirmarReserva() {
+        if (getQuarto() == null) {
+            throw new IllegalStateException("Reserva sem quarto!");
+        }
+
+        if (!getQuarto().isQuartoLivre()) {
+            throw new IllegalStateException("Quarto ocupado!");
+        }
+
+        setHorarioChegada(LocalDateTime.now());
+
+        getQuarto().setQuartoLivre(false);
+
+        System.out.println("Reserva confirmada e check-in realizado!");
+    }
+
     public LocalDateTime getHorarioDaReserva() {
         return horarioDaReserva;
     }
-    
-    // Setters
-    // Pode ser necessário caso algum hospede deseje alterar o horario da reserva
+
     public void setHorarioDaReserva(LocalDateTime horarioDaReserva) {
         this.horarioDaReserva = horarioDaReserva;
     }
