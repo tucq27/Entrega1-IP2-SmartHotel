@@ -1,3 +1,5 @@
+package ClassesBasicas;
+
 public class Servico{
     private String descricao;
     private Funcionario funcionario;

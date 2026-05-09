@@ -1,3 +1,5 @@
+package ClassesBasicas;
+
 public class Hospede extends Pessoa {
     private String preferencias;
     private String historico;

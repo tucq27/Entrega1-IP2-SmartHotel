@@ -1,4 +1,6 @@
-class QuartoSuite extends Quarto {
+package ClassesBasicas;
+
+public class QuartoSuite extends Quarto {
 
     public QuartoSuite(String id, int andar, int capacidade, Frigobar frigobar) {
         super(id, andar, capacidade, frigobar);

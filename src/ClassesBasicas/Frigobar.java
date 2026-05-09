@@ -1,3 +1,5 @@
+package ClassesBasicas;
+
 import java.util.ArrayList;
 
 public class Frigobar {

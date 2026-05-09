@@ -1,4 +1,6 @@
-abstract class Quarto {
+package ClassesBasicas;
+
+public abstract class Quarto {
 
     protected String id;
     protected int andar;
