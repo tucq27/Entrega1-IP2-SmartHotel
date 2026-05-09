@@ -9,7 +9,6 @@ public abstract class Quarto {
     protected double multTaxa; //Multiplicador de taxa de acordo com o tipo de quarto
     protected static double multTemporada;
     protected int capacidade;
-    protected Hospedagem hospedagem;
     protected Frigobar frigobar; // Talvez devêssemos inicializar o frigobar por aqui
 
     public Quarto(String id, int andar, int capacidade, Frigobar frigobar) {
@@ -42,9 +41,6 @@ public abstract class Quarto {
     public int getCapacidade() {
         return capacidade;
     }
-    public Hospedagem getHospedagem() {
-        return hospedagem;
-    }
     public Frigobar getFrigobar() {
         return frigobar;
     }
@@ -67,9 +63,6 @@ public abstract class Quarto {
     }
     public void setCapacidade(int capacidade) {
         this.capacidade = capacidade;
-    }
-    public void setHospedagem(Hospedagem hospedagem) {
-        this.hospedagem = hospedagem;
     }
     public void setFrigobar(Frigobar frigobar) {
         this.frigobar = frigobar;
