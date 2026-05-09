@@ -18,7 +18,7 @@ public class Pessoa {
         this.email = email;
     }
 
-    protected int calcularIdade() {
+    public int calcularIdade() {
         return Period.between(dataNascimento, LocalDate.now()).getYears();
     }
 

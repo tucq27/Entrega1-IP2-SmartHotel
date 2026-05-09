@@ -9,13 +9,14 @@ public abstract class Quarto {
     protected double multTaxa; //Multiplicador de taxa de acordo com o tipo de quarto
     protected static double multTemporada;
     protected int capacidade;
-    protected Frigobar frigobar; // Talvez devêssemos inicializar o frigobar por aqui
+    protected Frigobar frigobar;
 
-    public Quarto(String id, int andar, int capacidade, Frigobar frigobar) {
+    // construtor
+    public Quarto(String id, int andar, int capacidade) {
         this.id = id;
         this.andar = andar;
         this.capacidade = capacidade;
-        this.frigobar = frigobar;
+        this.frigobar = new Frigobar();
         // por padrao, o quarto é limpo e livre, entao não precisa passar isso no construtor
     }
 

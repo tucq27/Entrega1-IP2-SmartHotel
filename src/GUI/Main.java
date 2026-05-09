@@ -19,7 +19,8 @@ public class Main {
         frigobar01.removerItem(agua);
 
         // criando um quarto
-        Quarto quarto01= new QuartoPadrao("01", 2, 5, frigobar01);
+        Quarto quarto01= new QuartoPadrao("01", 2, 5);
+        quarto01.setFrigobar(frigobar01);
 
 
         // criando um responsável
