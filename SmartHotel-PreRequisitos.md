@@ -20,14 +20,6 @@ O sistema deve organizar os quartos por categorias, validar a disponibilidade pa
 - **REQ07**: Registrar o Check-out com encerramento da conta e alteração de status para "limpeza". _(Implementando)_
 - **REQ08**: Permitir a reserva de múltiplos quartos vinculados a um único "responsável de grupo" (_todos as hospedagens dependem de um responsável, este que pode ter mais de uma reserva_). _OK_
 
-## OBS: Alterações futuras no diagrama/ código
-- **1:** Além da classe reserva, adicionar a classe hospedagem (considerando que hóspedes podem fazer uma reserva prévia e se hospedarem ou simplesmente chegar no hotel e se hospedar, caso haja quartos disponíveis)
-- **2:** Criar classe Hospedagem, com a subclasse Reserva (hospedagem com agendamento prévio)
-- **3:** Adicionar como atributo na Reserva o *Horário de reserva* (hora em que a reserva foi realizada)
-- **4:** Adicionar um método na classe Reserva que sirva para verificar se a pessoa que fez a reserva é a pessoa de verdade (_ex: alguém pode tentar entrar usando o nome da pessoa, então o sistema também pode pedir nome, cpf e id da reserva para impedir isso_)
-- **5:** Adicionar futurante o método verificarQuartos, pra saber se existe algum quarto disponível no hotel antes de fazer a reserva/ hospedagem (_varre todo o arrayList de quartos no hotel e verifica se eles estão disponíveis_)
-- **6:** Criar um Repositório de Custos que registra todos os custos relacionados a um responsável
-
 ### 3. Consumo e Serviços
 - **REQ09**: Gerenciar o inventário do frigobar (composição) para cada quarto específico.
 - **REQ10**: Registrar consumo de itens do frigobar durante a estadia do hóspede.
