@@ -12,13 +12,20 @@ public abstract class Quarto implements InterfaceIdentificavel {
     protected int capacidade;
     protected Frigobar frigobar;
 
-    // construtor
+    // construtor sem frigobar
     public Quarto(String id, int andar, int capacidade) {
         this.id = id;
         this.andar = andar;
         this.capacidade = capacidade;
-        this.frigobar = new Frigobar();
         // por padrao, o quarto é limpo e livre, entao não precisa passar isso no construtor
+    }
+
+    // construtor com frigobar
+    public Quarto(String id, int andar, int capacidade, Frigobar frigobar) {
+        this.id = id;
+        this.andar = andar;
+        this.capacidade = capacidade;
+        this.frigobar = frigobar;
     }
 
     // Getters
