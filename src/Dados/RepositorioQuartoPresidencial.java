@@ -1,6 +1,8 @@
 package Dados;
 
-public class RepositorioQuartoPresidencial extends RepositorioQuartos {
+import ClassesBasicas.QuartoPresidencial;
+
+public class RepositorioQuartoPresidencial extends RepositorioPadrao<QuartoPresidencial> {
 
     // construtor
     public RepositorioQuartoPresidencial() {

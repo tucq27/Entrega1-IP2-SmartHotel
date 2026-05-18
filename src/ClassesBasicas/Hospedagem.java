@@ -2,11 +2,21 @@ package ClassesBasicas;
 
 import Dados.InterfaceIdentificavel;
 import java.time.LocalDateTime;
+//import java.time.LocalDate;
 import java.time.Duration;
 import java.util.ArrayList;
 
 // Classe responsável por representar uma hospedagem no hotel
 public class Hospedagem implements InterfaceIdentificavel {
+
+    // MIGRAR HOSPEDAGEM PARA RESERVA
+
+        // Armazena o horário em que a reserva foi feita
+    //private LocalDateTime horarioDaReserva;
+
+        // Horários de entrada e saída
+    //private LocalDate inicio;
+    //private LocalDate fim;
 
     // Identificador único da hospedagem
     private String id;
